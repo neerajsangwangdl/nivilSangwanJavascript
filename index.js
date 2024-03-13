@@ -13,7 +13,6 @@
 // console.log(typeof valueInNumber)
 // console.log(valueInNumber)
 
-
 // let score = '40fgh';
 // console.log(typeof score)
 // console.log(typeof (score))
@@ -64,24 +63,24 @@
 1. Stack: Primitive
 2. Heap: Non-Primitive
 */
-
 // ------------------- Strings In JS ---------------------
 
 const name = "Nivil"
 const repocount = 2
-
 // console.log(name + repocount + "Value");
-
-console.log(`Hello, my name is ${name} and my repocount is ${repocount}`);   // string interpolation
+// console.log(`Hello, my name is ${name} and my repocount is ${repocount}`);   // string interpolation
 const gamename = new String('hiteshhc')
 // console.log(gamename[2]);
 // console.log(gamename.length);
 // console.log(gamename.toUpperCase);
 // console.log(gamename.charAt('1'));
 // console.log(gamename.indexOf('l'));
-
 const newstring = gamename.substring(0, 7)
-console.log(newstring);
-
+// console.log(newstring);
 const ultstring = gamename.slice(-8, 4);
-console.log(ultstring);
+// console.log(ultstring);
+
+// ---------------------- Numbers and Maths -------------------------
+const balance = 500
+const newbalance = new Number(1000)
+console.log(newbalance);
