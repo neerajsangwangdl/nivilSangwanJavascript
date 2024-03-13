@@ -81,14 +81,21 @@ const ultstring = gamename.slice(-8, 4);
 // console.log(ultstring);
 
 // ---------------------- Numbers and Maths -------------------------
+// ---------------------- Numbers ---------------------------
+
 const balance = 500
 const newbalance = new Number(1000)
 // console.log(newbalance);
 
-console.log(balance.toString().length);
-console.log(balance.toFixed(2));
+// console.log(balance.toString().length);
+// console.log(balance.toFixed(2));
 const tullu = 48.4332
-console.log(tullu.toPrecision(5));
+// console.log(tullu.toPrecision(5));
 
 const one = 1000000
-console.log(one.toLocaleString('en-IN'));
+// console.log(one.toLocaleString('en-IN'));
+
+// ------------------------- Math -------------------------
+
+console.log(Math);
+console.log(Math.abs(-5));
