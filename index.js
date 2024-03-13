@@ -65,3 +65,23 @@
 2. Heap: Non-Primitive
 */
 
+// ------------------- Strings In JS ---------------------
+
+const name = "Nivil"
+const repocount = 2
+
+// console.log(name + repocount + "Value");
+
+console.log(`Hello, my name is ${name} and my repocount is ${repocount}`);   // string interpolation
+const gamename = new String('hiteshhc')
+// console.log(gamename[2]);
+// console.log(gamename.length);
+// console.log(gamename.toUpperCase);
+// console.log(gamename.charAt('1'));
+// console.log(gamename.indexOf('l'));
+
+const newstring = gamename.substring(0, 7)
+console.log(newstring);
+
+const ultstring = gamename.slice(-8, 4);
+console.log(ultstring);
