@@ -83,4 +83,12 @@ const ultstring = gamename.slice(-8, 4);
 // ---------------------- Numbers and Maths -------------------------
 const balance = 500
 const newbalance = new Number(1000)
-console.log(newbalance);
+// console.log(newbalance);
+
+console.log(balance.toString().length);
+console.log(balance.toFixed(2));
+const tullu = 48.4332
+console.log(tullu.toPrecision(5));
+
+const one = 1000000
+console.log(one.toLocaleString('en-IN'));
