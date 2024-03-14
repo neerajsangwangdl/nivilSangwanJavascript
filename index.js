@@ -150,12 +150,18 @@ const myArr2 = new Array(1, 2, 3, 4)
 
 //slice, splice
 
-console.log("A", myArr);
+// console.log("A", myArr);
 
 const myn1 = myArr.slice(1, 3)
-console.log("B", myArr);
-console.log(myn1);
+// console.log("B", myArr);
+// console.log(myn1);
 
 const myn2 = myArr.splice(1, 3)
-console.log("C", myArr);
-console.log(myn2);
+// console.log("C", myArr);
+// console.log(myn2);
+
+const marvelheros = ["Thor", "Spiderman", "Dr.Strange"]
+const dcheros = ["Superman", "Batman", "Flash"]
+marvelheros.push(dcheros)
+console.log(marvelheros);
+console.log(marvelheros[3][1]);
