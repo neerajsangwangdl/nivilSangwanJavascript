@@ -97,5 +97,29 @@ const one = 1000000
 
 // ------------------------- Math -------------------------
 
-console.log(Math);
-console.log(Math.abs(-5));
+// console.log(Math);
+// console.log(Math.abs(-5));
+
+// ------------------------- Dates --------------------------
+
+let newdate = new Date()
+// console.log(newdate.toString()); // day, date, time with spaces(coordinated universal time)
+// console.log(newdate.toDateString()); // day and date
+// console.log(newdate.toISOString()); // date and time separated with 'T'
+// console.log(newdate.toJSON());  // everything same as upper
+// console.log(newdate.toLocaleDateString()); // tells the date directly(nothing else)
+// console.log(newdate.toLocaleString()); // tells date and time separated with comma  " , "(coordinated universal time)
+
+console.log(typeof newdate);
+// let mycreateddate = new Date(2023, 0, 23, 5, 3)
+
+let mycreateddate = new Date("01-14-2024");
+// console.log(mycreateddate.toLocaleString());
+
+let mytimestamp = Date.now()
+console.log(mytimestamp);
+console.log(mycreateddate.getTime());
+console.log(Math.floor(Date.now()/1000));
+
+let adate = new Date()
+console.log(adate);
