@@ -110,16 +110,40 @@ let newdate = new Date()
 // console.log(newdate.toLocaleDateString()); // tells the date directly(nothing else)
 // console.log(newdate.toLocaleString()); // tells date and time separated with comma  " , "(coordinated universal time)
 
-console.log(typeof newdate);
+// console.log(typeof newdate);
 // let mycreateddate = new Date(2023, 0, 23, 5, 3)
 
 let mycreateddate = new Date("01-14-2024");
 // console.log(mycreateddate.toLocaleString());
 
 let mytimestamp = Date.now()
-console.log(mytimestamp);
-console.log(mycreateddate.getTime());
-console.log(Math.floor(Date.now()/1000));
+// console.log(mytimestamp);
+// console.log(mycreateddate.getTime());
+// console.log(Math.floor(Date.now()/1000));
 
 let adate = new Date()
-console.log(adate);
+// console.log(adate);
+
+// ------------------- Arrays --------------------------
+
+const myArr = [0, 1, 2, 3, 4, 5, true, "Nivil"]
+const myheros = ["Batman", "Flash", "Superman", "Dr.Strange", "Hulk", "Spiderman"]
+
+const myArr2 = new Array(1, 2, 3, 4)
+// console.log(myArr2[0]);
+
+// array methods
+
+// myArr.push(6)
+// myArr.push(7)
+// myArr.pop()
+
+// myArr.unshift(9)
+// myArr.shift()
+// console.log(myArr);
+// console.log(myArr.includes(9));
+// console.log(myArr.indexOf(4));
+
+const newArr = myArr.join()
+console.log(myArr);
+console.log(typeof newArr);
