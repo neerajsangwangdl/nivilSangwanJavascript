@@ -264,11 +264,27 @@ const users = [
         email: "N@gmail.com"
     }
 ]
-users[1].email
-console.log(youtubeuser);
+// users[1].email
+// console.log(youtubeuser);
 
-console.log(Object.keys(youtubeuser));
-console.log(Object.values(youtubeuser));
-console.log(Object.entries(youtubeuser));
+// console.log(Object.keys(youtubeuser));
+// console.log(Object.values(youtubeuser));
+// console.log(Object.entries(youtubeuser));
 
-console.log(youtubeuser.hasOwnProperty("islogged"));
+// console.log(youtubeuser.hasOwnProperty("isloggedin"));
+// ---------------------- JS objects de-structuring ----------------------------
+const course = {
+    coursename: "Hindi JS course",
+    courseinstructor: "Nivil",
+    cost: 700
+}
+// course.courseinstructor
+
+const {courseinstructor: instructor} = course
+console.log(instructor);
+// {
+//     name: "Nivil"
+//     coursename: "JS in hindi"
+//     price: "free"
+// }
+
