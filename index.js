@@ -215,10 +215,60 @@ JSuser.email = "NivilSangwan@microsoft.com"
 // console.log(JSuser);
 
 JSuser.greeting = function(){
-    console.log("Hello JSuser");
+    // console.log("Hello JSuser");
 }
 JSuser.greeting2 = function(){
-    console.log(`Hello JSuser, ${this.name}`);
+    // console.log(`Hello JSuser, ${this.name}`);
 }
-console.log(JSuser.greeting());
-console.log(JSuser.greeting2());
+// console.log(JSuser.greeting());
+// console.log(JSuser.greeting2());
+
+// const youtubeuser = new Object()
+const youtubeuser = {}
+youtubeuser.id = "123abc"
+youtubeuser.name = "Sammy"
+youtubeuser.isloggedin = "false"
+// console.log(youtubeuser);
+
+const regularuser = {
+    email: "Sammy@gmail.com",
+    fullname: {
+        userfullname: {
+            firstname: "Nivil",
+            lastname: "Sangwan"
+        }
+    }
+}
+
+// console.log(regularuser.fullname?.userfullname.firstname);
+const obj1 = {1: "a", 2: "b"}
+const obj2 = {3: "a", 4: "b"}
+const obj4 = {5: "a", 6: "b"}
+
+// const obj3 = {obj1, obj2}
+// const obj3 = Object.assign({}, obj1, obj2)
+const obj3 = {...obj1, ...obj2}
+// console.log(obj3);
+
+const users = [
+    {
+        id: 1,
+        email: "N@gmail.com"
+    },
+    {
+        id: 1,
+        email: "N@gmail.com"
+    },
+    {
+        id: 1,
+        email: "N@gmail.com"
+    }
+]
+users[1].email
+console.log(youtubeuser);
+
+console.log(Object.keys(youtubeuser));
+console.log(Object.values(youtubeuser));
+console.log(Object.entries(youtubeuser));
+
+console.log(youtubeuser.hasOwnProperty("islogged"));
