@@ -126,10 +126,9 @@ let adate = new Date()
 
 // ------------------- Arrays --------------------------
 
-const myArr = [0, 1, 2, 3, 4, 5, true, "Nivil"]
-const myheros = ["Batman", "Flash", "Superman", "Dr.Strange", "Hulk", "Spiderman"]
-
-const myArr2 = new Array(1, 2, 3, 4)
+// const myArr = [0, 1, 2, 3, 4, 5, true, "Nivil"]
+// const myheros = ["Batman", "Flash", "Superman", "Dr.Strange", "Hulk", "Spiderman"]
+// const myArr2 = new Array(1, 2, 3, 4)
 // console.log(myArr2[0]);
 
 // array methods
@@ -151,17 +150,75 @@ const myArr2 = new Array(1, 2, 3, 4)
 //slice, splice
 
 // console.log("A", myArr);
-
-const myn1 = myArr.slice(1, 3)
+// const myn1 = myArr.slice(1, 3)
 // console.log("B", myArr);
 // console.log(myn1);
-
-const myn2 = myArr.splice(1, 3)
+// const myn2 = myArr.splice(1, 3)
 // console.log("C", myArr);
 // console.log(myn2);
 
-const marvelheros = ["Thor", "Spiderman", "Dr.Strange"]
-const dcheros = ["Superman", "Batman", "Flash"]
-marvelheros.push(dcheros)
-console.log(marvelheros);
-console.log(marvelheros[3][1]);
+// const marvelheros = ["Thor", "Spiderman", "Dr.Strange"]
+// const dcheros = ["Superman", "Batman", "Flash"]
+// marvelheros.push(dcheros)
+// console.log(marvelheros);
+// console.log(marvelheros[3][1]);
+
+// const allheros = marvelheros.concat(dcheros)
+// console.log(allheros);
+
+// const allnewheros = [...marvelheros, ...dcheros]
+// console.log(allnewheros);
+
+// const new_arr = [1, 2, 3, [4, 5, 6], [7, 8, 9, [4, 1]]]
+// const realarr = new_arr.flat(Infinity)
+// console.log(realarr);
+
+// console.log(Array.isArray("Nivil"));
+// console.log(Array.from("Nivil"));
+// console.log(Array.from({name: "Nivil"})); <<< interesting
+
+// let score1, score2, score3
+// score1 = 100
+// score2 = 200
+// score3 = 300
+// console.log(Array.of(score1, score2, score3));
+
+// -------------------------- Objects(Very Important) -------------------------
+// Singleton
+//object literals
+const mysym = Symbol("key1")
+Object.create
+const JSuser = {
+    name: "Nivil",
+    "fullname": "Nivil Sangwan",
+    [mysym]: "mykey1",
+    age: 13,
+    location: "Sector 19B, Dwarka",
+    email: "Nivil@gmail.com",
+    isloggedin: false,
+    lastlogindays: ["Monday, Tuesday, Friday"]
+}
+// console.log(JSuser.email)
+// console.log(JSuser["email"])
+// console.log(JSuser["fullname"])  <<<Correct and only way
+// console.log(JSuser.fullname)  <<<Incorrect
+// console.log(JSuser."full name")  <<<Incorrect
+
+// console.log(JSuser.email);
+// console.log(JSuser["email"]);
+// console.log(JSuser["fullname"]);
+// console.log(JSuser[mysym]);
+
+JSuser.email = "NivilSangwan@gmail.com"
+// Object.freeze(JSuser)
+JSuser.email = "NivilSangwan@microsoft.com"
+// console.log(JSuser);
+
+JSuser.greeting = function(){
+    console.log("Hello JSuser");
+}
+JSuser.greeting2 = function(){
+    console.log(`Hello JSuser, ${this.name}`);
+}
+console.log(JSuser.greeting());
+console.log(JSuser.greeting2());
