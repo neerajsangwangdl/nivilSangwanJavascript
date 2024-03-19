@@ -43,17 +43,17 @@ const user = {
     price: 200
 }
 function handleobject(anyobject){
-    console.log(`Username is ${anyobject.username} and the price is ${anyobject.price}`);
+console.log(`Username is ${anyobject.username} and the price is ${anyobject.price}`);
 }
 // handleobject(user)
 handleobject({
-    username: "Sam",
-    price: "400"
+username: "Sam",
+price: "400"
 })
 
 const mynewarray = [200, 400, 600, 800, 1000]
 function returnsecondvalue(getarray){
-    return getarray[1]
+return getarray[1]
 }
 
 console.log(returnsecondvalue([200, 400, 600, 800, 1000]));
